@@ -8,6 +8,6 @@ public class HelloWildFlyController {
     @RequestMapping("hello")
     public String sayHello() {
         return
-                String.format("{'hello_ms': %d}", System.currentTimeMillis());
+                String.format("{\"hello_ms\": %d}", System.currentTimeMillis());
     }
 }
