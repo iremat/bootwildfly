@@ -10,4 +10,10 @@ public class HelloWildFlyController {
         return
                 String.format("{\"hello_ms\": %d}", System.currentTimeMillis());
     }
+
+    @RequestMapping("getmessages")
+    public String readFromKafka() {
+        return
+                String.format("{\"messages\": %s}", "N/A");
+    }
 }
