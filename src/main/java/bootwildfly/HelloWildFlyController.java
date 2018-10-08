@@ -1,15 +1,13 @@
 package bootwildfly;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
-
-import java.util.logging.Logger;
-
 @RestController
 public class HelloWildFlyController {
-    Logger logger = Logger.getLogger(HelloWildFlyController.class.toString());
+    Logger logger = LoggerFactory.getLogger(HelloWildFlyController.class.toString());
 
 
     @RequestMapping("hello")
