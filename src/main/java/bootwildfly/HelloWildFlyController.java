@@ -1,5 +1,6 @@
 package bootwildfly;
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +13,7 @@ public class HelloWildFlyController {
 
     @RequestMapping("hello")
     public String sayHello() {
-        logger.info("sayHello");
+        logger.debug("sayHello");
 
         System.out.println("SayHello system");
 
