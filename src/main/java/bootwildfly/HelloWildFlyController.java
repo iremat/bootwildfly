@@ -14,14 +14,19 @@ public class HelloWildFlyController {
 
     @RequestMapping("hello")
     public String sayHello() {
-        logger.debug("sayHello");
+        logger.info("sayHello");
+        logger.debug("sayHello deb");
+        System.out.println("SayHello system");
+
         return
                 String.format("{\"hello_ms\": %d}", System.currentTimeMillis());
     }
 
     @RequestMapping("getmessages")
     public String readFromKafka() {
-        logger.debug("getmessages");
+        logger.info("getmessages");
+        logger.debug("getmessages debug");
+        System.out.println("get mesages system");
 
         return
                 String.format("{\"messages\": %s}", "N/A");
