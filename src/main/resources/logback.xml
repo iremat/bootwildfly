@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-    <configuration>
-        <include resource="org/springframework/boot/logging/logback/base.xml"/>
-        <logger name="org.springframework.web" level="DEBUG"/>
-    </configuration>
-
-    <property name="LOGS" value="\logs" />
+    <property name="LOGS" value="D:\logs" />
 
     <appender name="Console"
               class="ch.qos.logback.core.ConsoleAppender">
@@ -38,7 +33,7 @@
     </appender>
 
     <!-- LOG everything at INFO level -->
-    <root level="trace" additivity="false">
+    <root level="trace">
         <appender-ref ref="RollingFile" />
         <appender-ref ref="Console" />
     </root>
