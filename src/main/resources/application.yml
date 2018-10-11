@@ -1,0 +1,12 @@
+spring:
+  kafka:
+    bootstrap-servers: http://apache-kafka-kong-api.10.0.75.2.nip.io
+
+app:
+  topic: test
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.memorynotfound: DEBUG
