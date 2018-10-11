@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: http://apache-kafka-kong-api.10.0.75.2.nip.io
+    bootstrap-servers: apache-kafka-kong-api.10.0.75.2.nip.io
 
 app:
   topic: test
